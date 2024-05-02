@@ -6,7 +6,7 @@ This is a simple video searcher that searches for videos using the YouTube API a
 - Make sure you have Docker installed. If not, you can download it from https://www.docker.com/get-started.
 - Get a YouTube API key from https://console.developers.google.com/. You will have to create a project and enable the YouTube API.
 - Create an `.env` file in the root directory, by copying and renaming the `.env.example` file and add the YouTube API key in the `YOUTUBE_API_KEY` variable. The rest of variables are OK for local testing.
-- Create a `dbdata` folder in the root directory.
+- Create a `data` folder in the root directory.
 - Run `docker compose up -d`. Wait for the containers to start (check with `docker compose logs` or `docker ps`).
 - Run `docker compose exec backend python manage.py migrate`.
 - Run `docker compose exec backend python manage.py createsuperuser` and follow the instructions to create a superuser.
